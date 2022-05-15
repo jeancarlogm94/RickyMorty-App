@@ -1,38 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+:root {
+	--color-primary: #08b2c9;
+	--color-secondary: radial-gradient(circle, #0d3b66, #103260, #152959, #192051, #1d1648, #161a4b, #0c1e4d, #00214f, #003057, #003d5b, #00495c, #1e555c);
+	--color-light: #C5EBC3;
+	--color-dark: #151515;
+}
+
+body {
+	font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+	background: var(--color-secondary);
+	color: var(--color-light);
+}
+
+.residents {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 10);
+}
+
+.residents img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.residents h3 {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.residents p {
+  margin: 10px;
+  text-align: left;
+}
+
+input {
+  font-size: 17px;
+  font-family: 'Oswald', sans-serif;
+  width: 50%;
+	height: 30px;
+	border: none;
+	border-radius: 50px;
+	padding: 20px;
+  margin: 20px;
+	outline: var(--color-d);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+input:hover {
+  box-shadow: 5px 5px 00px rgba(0, 0, 0, 0.9);
+  transform: translateY(-3%)
+}
+
+.btnSearch {
+  font-size: 17px;
+  font-family: 'Oswald', sans-serif;
+  padding: 5px;
+  width: 90px;
+  border-radius: 40px;
+  border: none;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.btnSearch:hover {
+  box-shadow: 5px 5px 00px rgba(0, 0, 0, 0.9);
+  transform: translateY(-3%)
+}
+
+.residents button {
+  margin: 0;
+  display: flex;
+  font-size: 12px;
+  font-family: 'Oswald', sans-serif;
+  padding: 10px;
+  border-radius: 40px;
+  border: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
