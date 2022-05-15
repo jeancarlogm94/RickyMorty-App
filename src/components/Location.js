@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import ResidentInfo from './ResidentInfo';
-import Logo from '../assets/img/Logo.png'
+// import Logo from '../assets/img/Logo.png'
 
 const Location = () => {
 
@@ -24,7 +24,8 @@ const Location = () => {
     return (
         <div className='Nav'>
             <h1>Rick and Morty App</h1>
-            <img src={Logo} alt="" />
+            <img className='logo' src="https://preview.redd.it/o6cwlzg3exk41.png?auto=webp&s=eaad71f0c76522a309978bbd65b1a06902e56970" alt="" />
+            {/* <img src={Logo} alt="" /> */}
             <h2>{location.name}</h2>
             <p><b>Type: </b>{location.type}</p>
             <p><b>Dimension: </b>{location.dimension}</p>
