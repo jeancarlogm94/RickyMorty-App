@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import ResidentInfo from './ResidentInfo';
-// import Logo from '../assets/img/Logo.png'
 
 const Location = () => {
   const [location, setLocation] = useState({});
